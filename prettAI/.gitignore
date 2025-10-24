@@ -1,0 +1,13 @@
+# Ignore the virtual environment
+flask_env/
+
+# Ignore datasets
+flask_service/datasets/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore logs
+*.log

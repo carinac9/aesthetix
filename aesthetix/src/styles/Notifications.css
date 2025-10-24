@@ -1,0 +1,115 @@
+.notifications-page {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  min-width: 70vw;
+}
+
+.notifications-title {
+  position: fixed;
+  padding: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top:-250px
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.friend-request-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.notification-item.unread {
+  background-color: #fffbe6; 
+  border-left: 5px solid #f4c542;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  min-height: 130px; 
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+
+.notification-item.unread {
+  background-color: #fffbe6;
+  border-left: 5px solid #f4c542;
+}
+
+.notif-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.notif-main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+
+.notif-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  flex: 1;
+  padding-right: 20px;
+  word-break: break-word; 
+}
+
+
+.notif-text strong {
+  font-weight: 600;
+  color: #333;
+}
+
+.comment-preview {
+  margin-top: 4px;
+  font-style: italic;
+  color: #555;
+  font-size: 1rem;
+}
+
+.notif-post-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.notif-time {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 10px;
+}
+
+
+.empty-message {
+  text-align: center;
+  color: #777;
+  margin-top: 2rem;
+}

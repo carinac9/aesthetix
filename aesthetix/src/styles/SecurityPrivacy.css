@@ -1,0 +1,237 @@
+.security-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.security-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 60px;
+  margin-top: -10px;
+}
+
+.security-section {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.security-section.inline {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.security-section h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.security-button,
+.delete-btn1 {
+  background-color: #000;
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.security-button:hover {
+  background-color: #888;
+}
+
+.delete-btn1 {
+  background-color: transparent;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.delete-btn1:hover {
+  background-color: #d9534f;
+  color: white;
+}
+
+
+.privacy-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.privacy-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.privacy-label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.privacy-toggle,
+.privacy-select {
+  font-size: 14px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.privacy-select {
+  appearance: none;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #ccc;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23333' d='M7 10L0.0717975 0.25L13.9282 0.25L7 10Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.privacy-select:hover {
+  border-color: #999;
+}
+
+.privacy-select:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.info-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.danger-zone h3 {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+.login-history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-history-item {
+  background-color: #f7f7f7;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.login-timestamp {
+  font-weight: 500;
+}
+
+.login-ip,
+.login-device {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.delete-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.delete-modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.delete-modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.confirm-delete-btn {
+  background-color: transparent;
+  border: 2px solid #d9534f;
+  color: #d9534f;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirm-delete-btn:hover {
+  background-color: #d9534f;
+  color: white;
+}
+
+.cancel-delete-btn {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-delete-btn:hover {
+  background-color: #999;
+}
+

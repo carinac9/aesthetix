@@ -1,0 +1,153 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  position: relative;
+  animation: slideDown 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-btn1 {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.close-btn1:hover {
+  color: #000;
+}
+
+.modal-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.modal-subtext {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.modal-box form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s, background 0.3s;
+  background: #f9f9f9; 
+  color: #333; 
+  text-align: left;
+}
+
+.modal-box input::placeholder {
+  color: #888; 
+}
+
+.modal-box input:focus {
+  border-color: #888;
+  background: #fff; 
+  outline: none;
+}
+
+.auth-btn {
+  background: #000;
+  color: white;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 90%;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.auth-btn:hover {
+  background: #888;
+  transform: scale(1.02);
+}
+
+.switch-auth {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.switch-btn {
+  background: none;
+  border: none;
+  color: #5a67d8;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: color 0.3s;
+}
+
+.switch-btn:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #5a67d8;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.forgot-password-btn:hover {
+  color: #000;
+}

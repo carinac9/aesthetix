@@ -1,0 +1,48 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display:block;
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.app-container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.signup-btn {
+  background-color: #ff5e57;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+  background-color: #ff3b30;
+  transform: scale(1.05);
+}
+
+

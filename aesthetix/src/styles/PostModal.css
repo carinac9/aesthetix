@@ -1,0 +1,203 @@
+.pmodal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+.pmodal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.pmodal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 1000px; 
+    height: 600px; 
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    gap: 20px;
+}
+
+
+.pmodal-layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%; 
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.pmodal-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%; 
+}
+
+.ppost-image {
+    width: 100%;
+    height: 100%; 
+    max-width: 450px;
+    max-height: 500px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ppost-user {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.pmodal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100%; 
+}
+
+.pmodal-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.ppost-description {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 250px; 
+}
+
+.pcomment-section {
+    width: 98%;
+    height: 100%;
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 19px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.pcomments-list {
+    flex-grow: 1;
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+
+.pcomments-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.pcomments-list::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+.pcomments-list::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.pcomment-back-btn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.pclose-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.pcomment-back-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.pcomment-toggle-btn {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    align-self: flex-start;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.pcomment-toggle-btn:hover {
+    background: #444;
+}
+
+.pmodal-content {
+    position: relative;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

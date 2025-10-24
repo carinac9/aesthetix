@@ -1,0 +1,143 @@
+.room-creation-container {
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+  .room-preview {
+    margin-top: 125px;
+    flex: 3;
+    background: #f0f0f0;
+  }
+  
+  .room-controls {
+    flex: 1;
+    padding: 20px;
+    background: #ffffff;
+    border-left: 1px solid #ddd;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .project-name-input {
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .project-name-input input {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+  }
+  
+  .project-name-input button {
+    margin-left: 10px;
+    padding: 5px 10px;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    min-height: 48px;
+    height: 48px;
+    background: #fafbfc;
+    position: relative;
+    z-index: 1;
+    flex-wrap: nowrap;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 22px;
+    font-size: 1.1rem;
+    color: #333;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+    margin: 0;
+    min-width: 110px;
+    height: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  
+  .tabs button.active-tab {
+    background: #007bff;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    z-index: 2;
+  }
+  
+  .tabs button:not(.active-tab):hover {
+    background: #f0f0f0;
+    color: #007bff;
+  }
+  
+  .tab-content {
+    margin-top: 10px;
+  }
+  
+  .tab-content label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .tab-content input[type="number"],
+  .tab-content input[type="color"],
+  .tab-content input[type="range"] {
+    margin-left: 10px;
+  }
+  
+  .tab-content input[type="checkbox"] {
+    margin-left: 10px;
+  }
+
+  .tabs button.active-tab {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .tab-content button {
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+  
+  .room-preview {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    background: #f0f0f0;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    min-height: 400px;
+    min-width: 400px;
+    position: relative;
+    margin-top: 0; 
+  }
+  
+  .save-icon-btn {
+    position: absolute;
+    top: 135px;
+    right: 18px;
+    background: none;
+    border: none;
+    color: #222;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.2s;
+  }
+  .save-icon-btn:hover {
+    color: #007bff;
+  }

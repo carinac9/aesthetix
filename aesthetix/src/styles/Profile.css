@@ -1,0 +1,30 @@
+.profile-container {
+  display: flex;
+  height: 100vh; 
+  background: #f9f9f9;
+  align-items: stretch; 
+}
+
+.sidebar {
+  width: 250px;
+  height: 95vh; 
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed; 
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.profile-content {
+  flex: 1;
+  margin-left: 250px; 
+  padding: 125px 40px 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
